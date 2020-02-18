@@ -91,7 +91,7 @@ Now, let's see how we can push the workload information by adding annotations.
 
 We create another file `alpine.yaml` with slightly modified contents that includes an annotation `orgs.k8s.snyk.io/v1` that when set to the organization ID that we obtained in the earlier step, will **push** the workload information to the Snyk dashboard.
 
-Create the file `alpine.yaml` with the following contents making sure to substititute the right organization ID below.
+Create the file `alpine.yaml` with the following contents making sure to substititute the right organization ID for `orgs.k8s.snyk.io/v1` in the `annotations` section below.
 
 ```
 apiVersion: apps/v1
