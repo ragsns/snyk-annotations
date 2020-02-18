@@ -30,7 +30,7 @@ snyk-monitor-7445d5849c-n2vzw   1/1     Running   0          102m
 For the organization, get the organization ID from the Settings tab of the Snyk dashboard as shown below.
 
 
-<img src="resources/Orgid.jpg"  width="400">
+<img src="resources/OrgId.jpg"  width="400">
 
 It's going to be a format similar to aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee comprising of hexadecimal digits.
 
