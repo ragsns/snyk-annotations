@@ -89,9 +89,9 @@ Now, let's see how we can push the workload information by adding annotations.
 
 ## Adding the annotation to the workload
 
-We create another file `alpine.yaml` with slightly modified contents that includes an annotation `orgs.k8s.snyk.io/v1` that when set to the organization ID that we obtained in the earlier step, will **push** the workload information to the Snyk dashboard.
+We create another file `alpine.yaml` with slightly modified contents. It includes an annotation `orgs.k8s.snyk.io/v1` that when set to the organization ID we obtained in the earlier step, will **push** the workload information to the Snyk dashboard.
 
-Create the file `alpine.yaml` with the following contents making sure to substititute the right organization ID for `orgs.k8s.snyk.io/v1` in the `annotations` section below.
+Create the file `alpine.yaml` with the following contents making sure to substitute the right organization ID for `orgs.k8s.snyk.io/v1` in the `annotations` section below.
 
 ```
 apiVersion: apps/v1
@@ -124,7 +124,7 @@ spec:
       securityContext: {}
 ```
 
-The difference between this `YAML` file and the one we created earlier is the added annotations in this file. Now create the workload with the following command
+The difference between this `YAML` file and the one we created earlier is the added annotation in this file. Now create the workload with the following command
 
 ```
 kubectl create -f alpine.yaml
@@ -136,7 +136,7 @@ Refresh the browser and Voila, you should see the workload information as below.
 
 <img src="resources/AnnotationReport.jpg"  width="400">
 
-If you dig down on the settings tab, you will notice the improper configuration parameters for the workload which can be fixed by modifying the `YAML` file.
+If you dig down on the settings tab, you will notice the improper configuration parameters repored for the workload which can be fixed by modifying the `YAML` file.
 
 <img src="resources/ImproperConfig.jpg"  width="400">
 
